@@ -1,0 +1,11 @@
+﻿{
+  "name": "beautyuz-backend",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "seed": "ts-node src/seed/seedAdmin.ts"
+  }
+}

@@ -1,4 +1,4 @@
-﻿{
+{
   "compilerOptions": {
     "jsx": "react-jsx",
     "target": "ES2020",
@@ -6,6 +6,19 @@
     "moduleResolution": "Bundler",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@api/*": ["api/*"],
+      "@hooks/*": ["hooks/*"],
+      "@context/*": ["context/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
